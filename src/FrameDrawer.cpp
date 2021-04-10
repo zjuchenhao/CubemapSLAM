@@ -62,6 +62,7 @@ cv::Mat FrameDrawer::DrawFrame()
             mState=Tracking::NO_IMAGES_YET;
 
         mIm.rowRange(newOrigin.y, mIm.rows-newOrigin.y).colRange(newOrigin.x, mIm.cols-newOrigin.x).copyTo(im);
+        // mIm.copyTo(im);
 
         if(mState==Tracking::NOT_INITIALIZED)
         {

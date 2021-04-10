@@ -1,0 +1,75 @@
+%YAML:1.0
+# Lafida cam0
+# Camera Parameters. Adjust them!
+# Camera calibration parameters camera back
+Camera.Iw: 720
+Camera.Ih: 720
+
+# hyperparameters
+Camera.nrpol: 5
+Camera.nrinvpol: 9
+
+# forward polynomial f(\rho)
+Camera.a0: -2.145764e+02
+Camera.a1: 0.0 
+Camera.a2: 1.454387e-03
+Camera.a3: 4.710255e-07
+Camera.a4: 1.947948e-09 
+
+# backward polynomial rho(\theta)
+Camera.pol0: 341.302468
+Camera.pol1: 232.633466
+Camera.pol2: 36.899872
+Camera.pol3: 37.140566
+Camera.pol4: 19.480442
+Camera.pol5: 9.112914
+Camera.pol6: 6.739793
+Camera.pol7: 3.283086
+Camera.pol8: 0.588018
+
+# affine matrix
+Camera.c: 0.999655
+Camera.d: -0.000063
+Camera.e: -0.000014
+
+# principal point
+Camera.u0: 367.311097
+Camera.v0: 341.713849
+
+Camera.fov: 190
+
+CubeFace.h: 240
+CubeFace.w: 240
+
+Camera.fps: 30.0
+Camera.RGB: 1
+
+ORBextractor.nFeatures: 2000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+#if there is a mask
+Camera.withFisheyeMask: 1
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.1
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 1
+Viewer.PointSize:2
+Viewer.CameraSize: 0.15
+Viewer.CameraLineWidth: 2
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -10
+Viewer.ViewpointZ: -0.1
+Viewer.ViewpointF: 2000
+
+FrameDrawer.MarginX: 120
+FrameDrawer.MarginY: 120

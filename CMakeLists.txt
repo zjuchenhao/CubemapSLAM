@@ -72,3 +72,8 @@ add_executable(cubemap_lafida
     Examples/cubemap_lafida.cpp)
 target_link_libraries(cubemap_lafida ${PROJECT_NAME})
 
+
+##for pal dataset
+add_executable(cubemap_pal
+    Examples/cubemap_pal.cpp)
+target_link_libraries(cubemap_pal ${PROJECT_NAME})
